@@ -1,3 +1,7 @@
+---
+title: "Is there a 'hot-hand' effect in football ?"
+---
+
 Following a discussion with a friend, I wanted to check if the chances
 of winning a football (soccer) game improve when the team has won the
 two previous games.
