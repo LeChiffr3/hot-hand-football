@@ -32,7 +32,7 @@ that there is no 'hot hand' effect.
     results$streak <- unlist(lapply(rle(paste(results$equipe, results$result))$length, function(x) rep(x, x)))
     results$streak_index <- unlist(lapply(rle(paste(results$equipe, results$result))$length, function(x) seq(1, x)))
 
-    #Add the expected victory, based on all the season previous games
+    #Add the expected victory, based on all the season's previous games
     results <- results %>%
       group_by(equipe) %>%
       mutate(after_x_wins = ifelse(lag(result == 'Win'), lag(streak_index), NA),
@@ -56,7 +56,7 @@ that there is no 'hot hand' effect.
 
     after_2_wins <-data.frame(matrix(unlist(after_2_wins), ncol = 2, byrow = T, dimnames = list(c('Won', 'Draw', 'Loss'), c( 'Observed', 'Expected'))))
 
-The contingency table
+The contingency table :
 
     after_2_wins
 
