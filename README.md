@@ -10,7 +10,7 @@ fallacy'](https://en.wikipedia.org/wiki/Hot-hand_fallacy)
 
 The data is from [Football-data.co.uk](http://www.football-data.co.uk/francem.php).
 We have the Ligue 1 results from July 1993 to February 2016.
-And Ligue 2 results from August 1996 to February 2016.
+And the Ligue 2 results from August 1996 to February 2016.
 It is a total of 15 874 games over 23 years.
 
 The Null hypotesis is that there is no 'hot hand' effect: **the expected win-rate after two consecutive wins is not different than what should be expected from the previous games of the season**.
