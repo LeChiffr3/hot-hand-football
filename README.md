@@ -8,12 +8,15 @@ two previous games.
 This is called the ['Hot-Hand
 fallacy'](https://en.wikipedia.org/wiki/Hot-hand_fallacy)
 
-I got the data from
-[Football-data.co.uk](http://www.football-data.co.uk/francem.php)
+The data is from [Football-data.co.uk](http://www.football-data.co.uk/francem.php).
+We have the Ligue 1 results from July 1993 to February 2016.
+And Ligue 2 results from August 1996 to February 2016.
+It is a total of 15 874 games over 23 years.
 
-I'll perform a chi-squared test to compare the expected win-rate with
-the oberved win-rate after 2 consecutive wins. The Null hypotesis is
-that there is no 'hot hand' effect.
+The Null hypotesis is that there is no 'hot hand' effect: **the expected win-rate after two consecutive wins is not different than what should be expected from the previous games of the season**.
+
+I'll perform a chi-squared test to compare the expected win-rate with the oberved win-rate after 2 consecutive wins.   
+
 
     #Gather the dataset to have one row per result (a result for the Home team, and one for the Away team)
     results <- games %>%
@@ -73,4 +76,5 @@ The contingency table :
     ## data:  after_2_wins$Observed
     ## X-squared = 0.95925, df = 2, p-value = 0.619
 
-The is no evidence to rejet the Null hypotesis.
+We cannot reject the Null Hypotesis based on this data.  
+We could not detect any 'hot hand effect' in this data.
